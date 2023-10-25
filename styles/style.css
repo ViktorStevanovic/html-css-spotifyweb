@@ -53,6 +53,14 @@ li{
     font-size: 0.8rem;
 }
 
+.btn{
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    border-radius: 2rem;
+    padding: .75em 2.5em;
+}
+
 /*FULL APP CONTAINER*/
 .wrapper{
     width: 100%;
@@ -88,7 +96,12 @@ li{
 .content-header{
     width: 100%;
     height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
+
+
 
 /*MAIN PAGE SECTION*/
 
