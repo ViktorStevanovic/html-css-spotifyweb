@@ -37,7 +37,7 @@ li{
 }
 
 .gray{
-    color: lightgray;
+    color: grey;
 }
 
 .green{
@@ -84,6 +84,25 @@ li{
     width: 50px;
     height: calc(100% - 90px);
     background-color: black;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.menu-list{
+    display: flex;
+    align-items: center;
+}
+
+.menu-list i{
+    height: 20px;
+    padding-right: .5rem;
 }
 
 /*MAIN CONTENT*/
@@ -161,6 +180,7 @@ li{
 
 .artist img{
     width: 100%;
+    margin-bottom: .5rem;
 }
 
 .einaudi{
