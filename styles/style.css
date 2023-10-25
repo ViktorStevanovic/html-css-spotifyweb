@@ -106,7 +106,7 @@ li{
     font-size: 0.8rem;
 }
 
-.recently-played{
+.category-name{
     padding-top: 2rem;
 }
 
@@ -121,6 +121,7 @@ li{
     flex-wrap: wrap;
     justify-content: center;
     gap: .5rem;
+    margin: 1rem 0;
 }
 
 .album-container h2{
