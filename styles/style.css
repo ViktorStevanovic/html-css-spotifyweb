@@ -110,6 +110,10 @@ li{
     padding-top: 2rem;
 }
 
+.category-name h1{
+    padding: .5rem 0;
+}
+
 .recently-played h1{
     font-size: 1.25rem;
     margin-bottom: 1rem;
@@ -138,8 +142,22 @@ li{
     margin-bottom: .5rem;
 }
 
+.artist{
+    text-align: center;
+}
 
+.artist img{
+    width: 100%;
+}
 
+.einaudi{
+    border-radius: 50%;
+    width: calc(50% - .5rem);
+}
+.youg{
+    border-radius: 50%;
+    width: calc(50% - .5rem);
+}
 
 
 /*BOTTOM-SECTION CONTAINER*/
