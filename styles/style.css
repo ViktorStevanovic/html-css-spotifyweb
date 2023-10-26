@@ -87,22 +87,30 @@ li{
     /*BIGGER THEN Xsmall=width: 250px;
                          align-items:start  */
     
-    width: 50px;
+    width: 250px;
     height: calc(100% - 90px);
     background-color: black;
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    align-items: flex-start;
+    gap: .7rem;
+    font-size: .8rem;
     position: relative;
 }
 
 .logo{
+    width: 100%;
     display: flex;
     align-items: center;
 }
-.logo i{
-    
+.logo h1{
+    font-size: 1.75rem;
+    margin-left: .5rem;
+}
+
+.menu{
+    width: 100%;
 }
 
 .menu-list{
@@ -111,17 +119,16 @@ li{
 }
 
 .menu-list i{
-    height: 20px;
     padding-right: .5rem;
     font-size: 1.25rem;
 }
 
 .nav-bar li{
-    margin: 1rem 0;
+    padding: .5rem 0;
 }
 
 .list-text{
-    display: none;
+    display: inline-block;
     /*Mobile=display:none*/
 }
 
@@ -130,7 +137,6 @@ li{
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    display: none;
 }
 
 .playlist i{
@@ -140,10 +146,15 @@ li{
 
 .profile{
     position: absolute;
-    bottom: 0;
+    bottom: 1rem;
     left: 0;
     width: 100%;
     padding: 0px 1rem;
+}
+
+
+.profile li{
+    padding: .5rem 0;
 }
 
 /*MAIN CONTENT*/
@@ -241,4 +252,82 @@ li{
     height: 90px;
     position: fixed;
     bottom: 0;
+    display: flex;
+    padding: .5rem .5rem;
+    font-size: .7rem;
+
+
+}
+
+.song, .player, .settings{
+    width: calc(100% / 3);
+
+}
+
+.song{
+    display:flex;
+}
+
+.song img{
+    width: 30%;
+    padding:
+}
+
+.selected-song{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.like{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    font-size: 1rem;
+}
+
+.player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.control{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    color: white;
+}
+
+.lenght{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: .5rem;
+}
+
+.line{
+    height: 6px;
+    width: 80%;
+    background: #D9D9D9;
+    opacity: 0.3;
+    border-radius: 10px;
+}
+
+.settings{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.settings .line{
+    width: 50%;
 }
