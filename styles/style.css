@@ -39,6 +39,9 @@ li{
 .gray{
     color: grey;
 }
+.gray-bg{
+    background-color: grey;
+}
 
 .green{
     color: #ADFF2E;
@@ -59,6 +62,8 @@ li{
     background-color: transparent;
     border-radius: 2rem;
     padding: .75em 2.5em;
+    margin-right: 1.5rem;
+    transition: all .5s;
 }
 
 .bold{
@@ -90,7 +95,7 @@ li{
     width: 50px;
     height: calc(100% - 90px);
     background-color: black;
-    padding: 1rem;
+    padding: 1rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,6 +109,7 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 1rem;
 }
 .logo h1{
     font-size: 1.75rem;
@@ -114,8 +120,9 @@ li{
     width: 100%;
 }
 
-.menu-list{
+.nav-bar ul{
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -125,7 +132,11 @@ li{
 }
 
 .nav-bar li{
-    padding: .5rem 0;
+    padding: .5rem .5rem;
+}
+
+.active{
+    border-left: 2px solid transparent;
 }
 
 .list-text{
@@ -133,11 +144,11 @@ li{
     /*Mobile=display:none*/
 }
 
-
 .playlist{
     display: none;
     flex-direction: column;
     gap: 1rem;
+    padding: 0 .62rem;
 }
 
 .playlist i{
@@ -146,16 +157,22 @@ li{
 }
 
 .profile{
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
     padding: 0px 1rem;
+    margin-top: auto;
 }
 
+.profile i{
+    padding-right: 5px;
+}
 
-.profile li{
-    padding: .5rem 0;
+.profile p:last-child{
+    font-size: 1.1rem;
+    color: white;
 }
 
 /*MAIN CONTENT*/
@@ -189,6 +206,11 @@ li{
     justify-content: center;
     gap: 1rem;
     font-size: 0.8rem;
+}
+
+.type-list ul li{
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
 }
 
 .category-name{
@@ -244,6 +266,18 @@ li{
     border-radius: 50%;
     width: calc(50% - .5rem);
 }
+
+.play-container{
+    position: relative;
+}
+.play-hover{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
 
 
 /*BOTTOM-SECTION CONTAINER*/
@@ -319,8 +353,8 @@ li{
 .line{
     height: 6px;
     width: 90%;
-    background: #D9D9D9;
-    opacity: 0.3;
+    background: gray;
+    border-left: 100px solid white;
     border-radius: 10px;
 }
 
@@ -336,6 +370,54 @@ li{
     width: 60%;
 }
 
+/*HOVER EFFECTS*/
+
+.nav-bar li:hover{
+    border-left: 2px solid #ADFF2E;
+}
+
+li:hover{
+    color: white;
+    cursor: pointer;
+}
+p:hover{
+    color: white;
+    cursor: pointer;
+}
+i:hover{
+    color: white;
+    cursor: pointer;
+}
+span:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.type-list ul li:hover{
+    border-bottom: 2px solid #ADFF2E;
+}
+
+.line:hover{
+    border-left: 100px solid #ADFF2E;
+    cursor: pointer;
+}
+
+.btn:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.control .fa-circle-play:hover{
+    scale: 1.1;
+}
+
+.play-container:hover .play-hover{
+    display: inline;
+}
+.play-container:hover img{
+    opacity: 0.5;
+    background-color:black;
+}
 
 /*SMALL*/
 
@@ -354,6 +436,14 @@ li{
     .playlist{
         display: flex;
     }
+    .profile{
+        align-items: flex-start;
+    }
+    .profile hr{
+        width: 100%;
+        border: 1px solid;
+        color: gray;
+    }
     .logo{
         justify-content: flex-start;
     }
@@ -362,6 +452,14 @@ li{
     }
     .player{
         width: 50%;
+    }
+    .profile{
+        top: 10rem;
+    }
+    .nav-bar ul{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 
